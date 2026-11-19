@@ -26,3 +26,12 @@ def test_zero_e_rejeitado():
     resultado = pode_emprestar(quantidade)
     # Verificar
     assert resultado is False
+
+
+def test_quantidade_nao_inteira_e_rejeitada():
+    # Preparar
+    quantidade = 4.5
+    # Agir
+    resultado = pode_emprestar(quantidade)
+    # Verificar
+    assert resultado is False
